@@ -1,0 +1,14 @@
+#body{
+  background-color: black;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+#body > h1{
+  color: pink;
+
+}
+p,ul,span{
+  color: orange;
+  font-size: 20px;
+}

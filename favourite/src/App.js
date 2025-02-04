@@ -22,7 +22,7 @@ function Favo(){
       loaction:"southindia",
     }
     return(
-      <div>
+      <div id="body">
         <h1>My Family</h1>
         <ul>
           {family.map((member,index)=>(
