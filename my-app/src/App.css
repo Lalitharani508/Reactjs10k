@@ -1,0 +1,83 @@
+#body{
+  background-color: black;
+  height: 100vh;
+}
+#navbar{
+  background-color:black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+#navbar > img {
+  width:100px;
+}
+#navright{
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+#navright > button{
+  padding: 8px;
+  font-size: 17px;
+  /* border-radius: 10px; */
+  background-color: blueviolet;
+  color: white;
+
+}
+
+#centerpart{
+  color: white;
+  padding: 30px;
+  /* align-items: center; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:10px;
+  font-size: 50px;
+  font-weight: bold;
+}
+#centerpart > .s{
+  /* background-color: red; */
+  color: blueviolet;
+}
+#text{
+  width:50%;
+  color: gray;
+  font-size: 20px;
+  padding: 10px;
+  
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 300px;
+  align-content: center;
+}
+.btns{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+.btns >button{
+  color: white;
+  background-color: blueviolet;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+
+ 
+}
+#git{
+  color: white;
+  background-color: gray;
+}
