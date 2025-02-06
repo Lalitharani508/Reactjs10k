@@ -5,6 +5,8 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import First from './App'
 // import {Hello} from './App'
+// import JsxRules from './App'
+import JsxRules from './components/jsxRules';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -12,6 +14,7 @@ root.render(
     
     <First/>
     {/* <Hello/> */}
+    {/* <JsxRules/> */}
   </React.StrictMode>
 );
 

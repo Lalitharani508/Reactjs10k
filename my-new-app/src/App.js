@@ -1,5 +1,7 @@
 import "./App.css"
 import Banner from "./k";
+import JsxRules from './components/jsxRules';
+import Listrendering from './components/listrendering'
 
 function First(){
   
@@ -25,6 +27,8 @@ function First(){
      
       </div>
       <Banner/>
+      <JsxRules/>
+      <Listrendering/>
     </div>
       
   )
