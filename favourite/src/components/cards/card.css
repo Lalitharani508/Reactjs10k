@@ -1,0 +1,14 @@
+.cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: space-around;
+}
+.card{
+    width: 20rem;
+    height: 25rem;
+}
+.card >img{
+    width: 100%;
+    height: 60%;
+}

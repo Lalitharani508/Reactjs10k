@@ -1,0 +1,32 @@
+#navbarr{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+#navbarr>div>h1{
+    color: rgb(9, 9, 108);
+
+}
+#nav-right{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 20px;
+    align-items: center;
+}
+#navbarr>#nav-right>#contact{
+    color: white;
+    background-color: rgb(9, 9, 108);
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px rgb(156, 137, 223);
+}
+#navbarr>#nav-right>#contact:hover{
+    background-color: orange;
+}
