@@ -3,16 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import First from './App'
+// import First from './App'
 // import {Hello} from './App'
 // import JsxRules from './App'
-import JsxRules from './components/jsxRules';
+// import JsxRules from './components/jsxRules';
+import Candyui from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     
-    <First/>
+    {/* <First/> */}
+    <Candyui/>
     {/* <Hello/> */}
     {/* <JsxRules/> */}
   </React.StrictMode>
