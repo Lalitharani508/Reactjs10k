@@ -16,7 +16,7 @@
 
 
 import React from "react";
-import { App1,App2 } from "./childclass";
+import { App1,App3 } from "./childclass";
 
 
 
@@ -127,7 +127,7 @@ export class Example5 extends React.Component{
         return(
             <div>
                 <h1>parent</h1>
-                <App2 emp_details={this.state}/>
+                <App3 emp_details={this.state}/>
 
             </div>
         )

@@ -38,15 +38,20 @@
 
 import React  from "react";
 import Parent from "./practice/classbsedcompo";
-import { Example2 ,Example3,Example4,Example5} from "./practice/classbsedcompo";
+// import { Example2 ,Example3,Example4,Example5} from "./practice/classbsedcompo";
+import { Eg1 ,Eg2,Eg3,Eg4} from "./eventbinding/eventbind";
 const App=()=>{
   return(
     <div>
       <Parent/>
-      <Example2></Example2>
+      {/* <Example2></Example2>
       <Example3/>
       <Example4></Example4>
-      <Example5/>
+      <Example5/> */}
+      <Eg1/>
+      <Eg2/>
+      <Eg3/>
+      <Eg4/>
       
     
     </div>
