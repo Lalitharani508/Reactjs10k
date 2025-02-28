@@ -3,8 +3,8 @@
  import Table from 'react-bootstrap/Table';
  function Table1(){
     return(
-        <div>
-            <Table bordered>
+        <div style={{padding:"100px"}}>
+            <Table style={{border:"2px solid black", marginTop:"100px"}} bordered >
                 <thead>
                     <tr>
                         <th>sl.no</th>

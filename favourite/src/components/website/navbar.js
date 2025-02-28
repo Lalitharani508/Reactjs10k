@@ -13,7 +13,7 @@ function Navbar1(){
     return(
         <div>
             <Navbar bg="primary" className="navbar" expand="md">
-                <Navbar.Brand>Chaitanya Mart</Navbar.Brand>
+                <Navbar.Brand>Lalitha</Navbar.Brand>
                 <Navbar.Toggle></Navbar.Toggle>
                 <Navbar.Collapse className="collapse">
                     <Nav style={{gap:20}}>

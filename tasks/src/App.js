@@ -40,6 +40,7 @@ import React  from "react";
 import Parent from "./practice/classbsedcompo";
 // import { Example2 ,Example3,Example4,Example5} from "./practice/classbsedcompo";
 import { Eg1 ,Eg2,Eg3,Eg4} from "./eventbinding/eventbind";
+import {Effect,Effect1,Effect2,Effect3,Effect4,Effect5,Effect6,Effect7,Effect8} from "../../tasks/src/useEffect/effect";
 const App=()=>{
   return(
     <div>
@@ -52,6 +53,16 @@ const App=()=>{
       <Eg2/>
       <Eg3/>
       <Eg4/>
+      <Effect/>
+      <Effect1/>
+      <Effect2/>
+      <Effect3/>
+      <Effect4/>
+      <Effect5/>
+      <Effect6/>
+      <Effect7/>  
+      <Effect8/>
+
       
     
     </div>

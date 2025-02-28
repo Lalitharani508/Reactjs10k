@@ -7,19 +7,19 @@ import k from '../../assests/image11.webp'
         <div>
             <Carousel>
                 <Carousel.Item>
-                    <img src={k} alt=""></img>
+                    <img src="https://static.vecteezy.com/system/resources/previews/025/482/734/non_2x/spinning-carousel-horses-bring-childhood-joy-outdoors-generated-by-ai-free-photo.jpg" alt=""></img>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg/800px-Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg" alt=""></img>
+                    <img src="https://cdn.pixabay.com/photo/2016/06/30/20/39/horse-1489825_1280.jpg" alt=""></img>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img src="https://static.vecteezy.com/system/resources/previews/026/646/625/non_2x/ai-generated-ai-generative-adventure-outdoor-wild-vacation-trip-landscape-beautiful-background-mountains-valley-graphic-art-photo.jpg" alt=""></img>
+                    <img src="https://static.vecteezy.com/system/resources/previews/025/482/734/non_2x/spinning-carousel-horses-bring-childhood-joy-outdoors-generated-by-ai-free-photo.jpg" alt=""></img>
                 </Carousel.Item>
                 
                 <Carousel.Item>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Himalayas%2C_Ama_Dablam%2C_Nepal.jpg/800px-Himalayas%2C_Ama_Dablam%2C_Nepal.jpg" alt=""></img>
+                    <img src="https://media.istockphoto.com/id/1887227507/photo/vintage-carousel-horse-in-the-sun-childhood-memories.webp?b=1&s=612x612&w=0&k=20&c=3aZ9y1JH_3m4AZXCnCVE2E_odVac7bZ87OahpnRLj2M=" alt=""></img>
                 </Carousel.Item>
                 
             </Carousel>
