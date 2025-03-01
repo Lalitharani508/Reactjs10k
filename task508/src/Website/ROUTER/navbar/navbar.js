@@ -11,13 +11,14 @@ const Navbarr = () => {
                 <Container>
                     <Navbar.Brand href="#home">Navbar</Navbar.Brand>
                     <Nav className="navLinks">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#features">About</Nav.Link>
-                        <Nav.Link href="#pricing">Products</Nav.Link>
-                        <Button variant="primary">Login</Button>
-                        <Button variant="primary">SignUp</Button>
-                        <Button> <IoCartOutline style={{ color: "white", fontSize: 50 }} size={"30"} />
-                        <Badge bg="secondary" style={{ top: -10 }}>9</Badge></Button>
+                        <Nav.Link href="./home">Home</Nav.Link>
+                        <Nav.Link href="./about">About</Nav.Link>
+                        <Nav.Link href="./products">Products</Nav.Link>
+                        <Button variant='primary'>login</Button>
+                        <Button variant='primary'>SignUp</Button>
+                        <Button><IoCartOutline style={{color:"white", fontSize:"40"}}/>
+                        <Badge bg='secondary' style={{top:-10}}>9</Badge></Button>
+
 
                     </Nav>
                 </Container>
