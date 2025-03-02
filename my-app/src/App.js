@@ -1,6 +1,3 @@
-
-
-
 import './App.css'
 function Example1(){
   return(

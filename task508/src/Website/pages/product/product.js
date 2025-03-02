@@ -1,34 +1,32 @@
 import React from "react";
-import { useEffect } from "react";
-import apidata from 'axios'
-import { useState } from "react";
 
-const Products = () => {
-    // const [data, setData] = useState([])
-    const [data, setData] = useState([]);
+import "./product.css"
+import { useNavigate } from "react-router-dom";
 
-    useEffect(() => {
-        apidata.get('https://dummyjson.com/recipes')
-            .then(res => {
-                console.log(res);  // Logs the entire response
-                setData(res.data.recipes);  // Sets the recipes data to state
-            })
-            .catch(err => {
-                console.log(err);  // Logs any errors
-            });
-    }, []);
+const Products = ({data}) => {
+    const navigate=useNavigate()
 
-    console.log(data); 
-    // console.log("data")
+  
+   
     return (
-        <div>
+        <div className="cardContainer">
             {data.map(x=>{
                 return(
-                    <div>{x.name}</div>
+                    <div className="card" onClick={()=>navigate(`/products/${x.id}`)}>
+                        <img src={x.image} alt=""/>
+                        <p>{x.name}</p>
+                        <span>{x.rating}</span>
+                        <div>
+                            <button>Ingrediants</button>
+                            <button>Instructions</button>
+
+                        </div>
+                    
+                    </div>
                 )
             })}
         </div>
     )
 }
 
-export default Products
+export default Products;
