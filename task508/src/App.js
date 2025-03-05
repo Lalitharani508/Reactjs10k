@@ -3,6 +3,8 @@ import Navbarr from './Website/ROUTER/navbar/navbar'
 import Home from './Website/pages/home/home'
 import About from './Website/pages/about/about'
 import Products from './Website/pages/product/product'
+import Singlepingrediants from './Website/pages/product/singlepingrediants'
+import Singlepinstructions from './Website/pages/product/SPinstructions'
 import { Route, Routes } from 'react-router-dom'
 import Singlep from './Website/pages/product/singleproduct'
 import { useEffect } from 'react'
@@ -29,7 +31,10 @@ const App = () => {
         <Route path="/home" element={<Home />} ></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/products" element={<Products data={data}/>}></Route>
-        <Route path='/products/:id' element={<Singlep data={data} />}></Route>
+        <Route path='/products/:id' element={<Singlep data={data} />}>
+                    <Route path='ingredients' element={<Singlepingrediants/>} ></Route>
+                    <Route path='instructions' element={<Singlepinstructions/>}></Route>
+        </Route>
       </Routes>
     </div>
   )

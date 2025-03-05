@@ -1,0 +1,11 @@
+.formdiv{
+    border: 2px dotted red;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+.formdiv>input{
+    display:flex;
+    /* flex-direction:co; */
+    padding: 20px;
+}
