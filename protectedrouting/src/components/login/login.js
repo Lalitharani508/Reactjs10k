@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-// import { Nav } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
 const Login = () => {
-    const nav=useNavigate()
     const [loginpdetails, setLoginDetails] = useState({ email: "", password: "" })
     const handleDetailslogin = (e) => {
         setLoginDetails({ ...loginpdetails, [e.target.name]: e.target.value })
@@ -12,13 +9,10 @@ const Login = () => {
         const allusersfromLS = JSON.parse(localStorage.getItem("allusers"))
         const loginformdata = loginpdetails
 
-        const userfound=allusersfromLS.find(x=>x.email===loginformdata.email && x.password === loginformdata.passWord)
+        const userfound=allusersfromLS.find((x)=>x.email===loginformdata.email&&x.password===loginformdata.password)
 
         if(userfound){
             alert("login successfully done")
-            localStorage.setItem("loggedinuser",JSON.stringify(userfound))
-            nav('/dashboard')
-
             
         }else{
             alert(" invalid credentials")

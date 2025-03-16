@@ -1,9 +1,7 @@
+
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-// import {Navigate} from 'react-router-dom'
 // import './signup.css'
 const Signup = () => {
-    const navi=useNavigate()
     const [signupdetails, setSignupDetails] = useState({ name: "", email: "", passWord: "" })
     // console.log(setSignupDetails)
     const [allusers, setAllusers] = useState([])
@@ -25,7 +23,6 @@ const Signup = () => {
         localStorage.setItem("allusers", JSON.stringify(allsignupuserdata))
         setSignupDetails({name:"",email:"",passWord:""})
         alert("signup suceessfully done!!!")
-        navi('/login')
 
     }
 
