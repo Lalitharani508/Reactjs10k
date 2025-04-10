@@ -35,7 +35,7 @@ function themechange(){
         </>
     )
 }
-export {SetTheme,InputColor,Randombgcolor,FindTotal}
+export {SetTheme,InputColor,Randombgcolor,FindTotal,FakeApi}
 
 
 
@@ -83,16 +83,121 @@ const Randombgcolor=()=>{
 
 
 const FindTotal=()=>{
-    const [item,setitem]=useState("")
+    const [quantity,setquantity]=useState("")
     const [price,setprice]=useState("")
     const [total,settotal]=useState("")
+
+    const handletotal=()=>{
+        settotal(Number(quantity*price))
+    }
     return(
         <>
-        <h1>take 3 inputs item,price,total</h1>
-        <input placeholder="enter item count" value={item} onChange={(e)=>setitem(e.target.value)}></input>
+        <h1>take 3 inputs quantity,price,total</h1>
+        <input placeholder="enter item count" value={quantity} onChange={(e)=>setquantity(e.target.value)}></input>
         <input placeholder="enter price" value={price} onChange={(e)=>setprice(e.target.value)}></input>
         <input placeholder="enter total" value={total} ></input>
+        <button onClick={handletotal}>Total</button>
 
         </>
     )
 }
+
+
+
+
+//category wise data display using fake store api
+const FakeApi=()=>{
+        
+
+    function getData(){
+
+    }
+    return(
+        <>
+        <h1>        fakestore api
+        </h1>
+        <button onClick={getData}>get data</button>
+        <button>mens category</button>
+        <button>women category</button>
+        <button>rating</button>
+
+        </>
+    )
+
+}
+
+const data=[
+    {id:1,name:"electronics",subcat:[
+        {id:101,name:"laptop",price:50000},
+        {id:102,name:"watch",price:10000},
+        {id:103,name:"pad",price:12000},
+        {id:104,name:"pods",price:10000},
+    ]
+},
+{
+    id:2,name:"fashion",subcat:[
+        {id:201,name:"lipstick",price:5000},
+        {id:202,name:"eyeliner",price:15000},
+        {id:203,name:"shades",price:500},
+        {id:204,name:"nail polish",price:510},
+
+    ]
+}
+,
+{
+    id:3,name:"dresses",subcat:[
+        {id:301,name:"t-shirts",price:5000},
+        {id:302,name:"shirts",price:15000},
+        {id:303,name:"tracks",price:500},
+        {id:304,name:"jeans",price:510},
+
+    ]
+},
+{
+    id:4,name:"household",subcat:[
+        {id:401,name:"tabel",price:5000},
+        {id:402,name:"utensils",price:15000},
+        {id:403,name:"mirror",price:500},
+        {id:404,name:"napkins",price:510},
+
+    ]
+}
+]
+const FilterCatAddtoCart1=()=>{
+   
+    console.log(data)
+
+
+    const [expandcat,setexpandcat]=useState(null)
+    const [selectcat,setselectcat]=useState(null)
+    const [cart,setcart]=useState([])
+
+    function handlecat(catid){
+        setexpandcat((x)=>(x===catid)?null:(catid))
+    }
+    return(
+        <div>
+            <div style={{display:"flex",gap:"10px",border:"2px solid black", margin:"10px"}}>
+                <div style={{border:"1px solid black",padding:"20px",margin:"20px"}}>
+                    <h2 style={{fontSize:"30px"}} >catgories</h2>
+                    {data.map((cat)=>(
+                        <div style={{border:"1px solid black", padding:"5px", margin:"5px"}} onClick={()=>handlecat(cat.id)}>{cat.name}</div>
+                    ))}
+                 
+
+
+                </div>
+                <div style={{border:"1px solid black",padding:"20px",margin:"20px" ,width:"80%"}}>
+                    <h2>products</h2>
+                    <div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div style={{width:"80%" ,border:"1px solid black",padding:"60px", margin:"10px"}}>add to cart</div>
+        </div>
+    )
+}
+export { FilterCatAddtoCart1};
