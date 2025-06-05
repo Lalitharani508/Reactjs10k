@@ -6,13 +6,19 @@ import React from "react";
 // import React from "react";
 import App1 from "./usecontext/app1";
 import { Counter } from "./usereducer/usereducer";
-import { Reactmemo } from "./reactmemo/parent";
+// import { Reactmemo } from "./reactmemo/parent";
+// import Use from "./usemomo/use";
+import App12 from "./usecallback/use";
+import A from "./usecallback/realtimeexample/u";
 const App=()=>{
   return(
     <>
+    {/* <Use/> */}
+    <A/>
+    <App12/>
     <App1/>
     <Counter/>
-    <Reactmemo/>
+    {/* <Reactmemo/> */}
     {/* hello */}
     {/* <Senarioonoff/>
     <SetTheme/>
